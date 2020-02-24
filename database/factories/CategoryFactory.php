@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Category::class, function (Faker $faker) {
     return [
-        //
+        'cat_name' => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'published' => $faker->numberBetween($min = 0, $max = 1)
     ];
 });

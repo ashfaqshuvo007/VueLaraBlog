@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('Dashboard');
+Route::get('/category', 'CategoryController@index')->name('Category');
+Route::get('/post', 'PostController@index')->name('Post');
